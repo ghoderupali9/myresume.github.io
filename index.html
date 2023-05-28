@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> its my portfolio </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   
+<div id="header">
+    <div class="container">
+        <nav>
+            
+            <ul>
+               
+                 <li><a href="#">home</a></li>
+                 <li><a href="#">about</a></li>
+                 <li><a href="#">services</a></li>
+                 <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <h1>Rupali <span>Ghode</span> </h2>
+            <p>
+                Website Developer
+            </p><br><br>
+ <h3> Hello I am Rupali Ghode from Nagpur</h3>
+        </div>
+    </div>
+
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div id="about">
+    <div class="container">
+        <div class="row">
+       
+            <div class="about-col-1">
+                <img src="image/womenwithbook.avif">
+                </div>
+                <div class="about-col-2">
+                    <h1>About Me</h1><br>
+                    <p>
+                    My name is Rupali Ghode,I have completed B.E. in computer science in 2018.<br>
+                    I have completed trainee internship on website development,in exceller IT
+                    services. <br>Also i have 2 year experience in party brand event services as
+                    business development exicutive.
+
+                </p>
+
+                <div class="tab-subtitle">
+                    <div class="tab-links  active-links" onclick="opentab(skills)">Skills</div>
+                    <div class="tab-links" onclick="opentab(experience)">Experience</div>
+                    <div class="tab-links" onclick="opentab(education)">Education</div>
+</div>
+
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                        <li><span>website development<br></span>Develope websites</li><br>
+                        <li><span>UI Developer<br></span>Design web interfaces</li><br>
+                        </ul>
+                </div>
+
+                <div class="tab-content" id="experience">
+                    <ul>
+                    <li><span>Internship<br></span>completed 6 month trainee internship in exceller IT services as website Developer.</li><br>
+                    <li><span>Projects<br></span>completed two live projects</li><br>
+                    </ul>
+            </div>
+
+            <div class="tab-content" id="education">
+                <ul>
+                <li><span>2018<br></span>B.E. in computer science,Nagpur.</li><br>
+                <li><span>2014<br></span>12th shree shivaji junior collage,gugulpimpri</li><br>
+                <li><span>2012<br></span>10th N.S.G.High school, kamptee ,Nagpur.</li><br>
+                </ul>
+        </div>
+            
+</div>
+
+        
+        </div>
+    </div>
+</div>
+
+<script>
+    var tablinks=document.getElementByClassName("tab-links");
+    var tabcontent=document.getElementByClassName("tab-content");
+
+    function opentab(tabname)
+    {
+        for(tablink of tablinks){
+            tablink.classlist.remove("active-links");
+
+        }
+
+        for(tabcontent of tabcontent){
+            tabcontent.classlist.remove("active-tab");
+            
+        }
+        event.currentTarget.add("active-links");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
